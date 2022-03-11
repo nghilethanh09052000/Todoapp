@@ -27,6 +27,7 @@ export default function App() {
           {text:text,key:uuidv4().toString()}
         ]
       })
+      Keyboard.dismiss()
     }else{
       Alert.alert("Failed to add","Your Todo must at least 3 chars long",
         {text:'Understood'}
@@ -76,8 +77,10 @@ const styles = StyleSheet.create({
   },
   content: {
     padding: 40,
+    flex: 1,
   },
   list: {
     marginTop: 20,
+    flex: 1,
   },
 });
